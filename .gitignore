@@ -1,0 +1,25 @@
+.DS_Store
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+client/src/.pnp
+client/src/.pnp.js
+
+# testing
+client/src/coverage
+
+# production
+client/src/build
+
+# misc
+client/src/.DS_Store
+client/src/.env.local
+client/src/.env.development.local
+client/src/.env.test.local
+client/src/.env.production.local
+
+client/src/npm-debug.log*
+client/src/yarn-debug.log*
+client/src/yarn-error.log*
