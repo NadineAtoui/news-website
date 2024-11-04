@@ -1,0 +1,38 @@
+.burgerMenu {
+  position: absolute;
+  top: 15px;
+  /* border: 1px solid red; */
+}
+
+.burgerIcon {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  /* border: 1px solid green; */
+}
+
+.menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  width: 300px;
+}
+
+.menu button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+
+.menu button:hover {
+  background-color: #f0f0f0;
+}

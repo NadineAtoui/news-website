@@ -1,0 +1,55 @@
+.container {
+}
+
+.articleCategories {
+}
+
+.newsContainer {
+  background-color: #222;
+  height: 60px;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categoryButton {
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0;
+}
+
+.separator {
+  padding: 0 10px;
+}
+
+.desktopCategories {
+  display: none;
+}
+.mobileCategories {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .container {
+    justify-content: center;
+    height: 60px;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .desktopCategories {
+    display: flex;
+  }
+
+  .mobileCategories {
+    display: none;
+  }
+}
