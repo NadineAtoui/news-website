@@ -1,1 +1,1 @@
-export * from './newsTypes';
+export * from './newsTypes.types';
