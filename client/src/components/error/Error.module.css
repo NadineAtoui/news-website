@@ -1,0 +1,23 @@
+.container {
+  color: #05445e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* border: 1px solid red; */
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.retryButton {
+  color: #189ab4;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
