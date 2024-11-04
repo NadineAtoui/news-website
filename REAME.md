@@ -85,6 +85,8 @@ cd ../client
 
 ```bash
 npm install
+// incase of conflicts try
+npm install --legacy-peer-deps
 ```
 
 ### 3. Set up environment variables:
