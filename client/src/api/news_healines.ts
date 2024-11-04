@@ -1,21 +1,14 @@
 import axios from 'axios';
 import { NewsApiResponse } from '../types'
 
+const API_URL = `${process.env.REACT_APP_API_HOST}/api/headlines`;
 
-// TODO remove local host
-const API_URL = 'http://localhost:3000/api/headlines';
-
-export const fetchNewsHeadlines = async (): Promise<NewsApiResponse> => {
+export const fetchNewsHeadlines = async (category: string = 'general'): Promise<NewsApiResponse> => {
   try {
-    const response = await axios.get<NewsApiResponse>(API_URL);
-    console.log("===========");
-    console.log("response ", response.data);
-    console.log("===========");
-
+    const response = await axios.get<NewsApiResponse>(`${API_URL}?category=${category}`);
     return response.data; 
   } catch (error) {
     console.error('Error fetching news:', error);
     throw error;
   }
 };
-
