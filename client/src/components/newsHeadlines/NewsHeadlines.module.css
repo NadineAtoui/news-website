@@ -1,0 +1,10 @@
+.container {
+  width: 100%;
+}
+
+.headlineContainer {
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+}
