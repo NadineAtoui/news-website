@@ -1,2 +1,50 @@
-.container {
+.headlines {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.mainHeadlineContainer {
+  width: 100%;
+}
+
+.headlinesListContainer {
+  padding: 20px;
+}
+
+@media (min-width: 600px) {
+  .headlines {
+    flex-direction: row-reverse;
+    padding-top: 40px;
+    justify-content: space-evenly;
+  }
+
+  .mainHeadlineContainer {
+    width: 60%;
+  }
+
+  .headlinesListContainer {
+    width: 30%;
+    padding: 0;
+    max-height: 80vh;
+    overflow-y: scroll;
+  }
+
+  .headlinesListContainer h2 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .headlines {
+    gap: 50px;
+    justify-content: center;
+  }
+
+  .mainHeadlineContainer {
+    max-width: 700px;
+  }
+
+  .headlinesListContainer {
+    max-width: 350px;
+  }
 }
