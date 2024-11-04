@@ -93,7 +93,7 @@ npm install
 - Add variables like:
 
 ```bash
-REACT_APP_API_URL=http://localhost:3000
+REACT_APP_API_HOST=http://localhost:3000
 ```
 
 ### 4. Start the frontend server:
